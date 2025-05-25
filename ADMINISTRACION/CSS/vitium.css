@@ -5,6 +5,15 @@
   --azul-negro-degradado: linear-gradient(90deg, #2DD8F6 0%, #1A1A1A 100%);
 }
 
+.login-icon {
+  color: white;      /* Cambia a cualquier color que quieras */
+  font-size: 30px;     /* Tamaño del ícono */
+  transition: color 0.3s ease;
+}
+
+.login-icon:hover {
+  color: #005599;      /* Color al pasar el mouse */
+}
 body {
   margin: 0;
   font-family: 'Montserrat', sans-serif;
