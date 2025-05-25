@@ -1,0 +1,125 @@
+:root {
+  --azul-claro: #2DD8F6;
+  --azul-vibrante: #009EF7;
+  --azul-medio: #0077D9;
+  --azul-oscuro-degradado: linear-gradient(90deg, #2DD8F6 0%, #0077D9 100%);
+  --azul-negro-degradado: linear-gradient(90deg, #2DD8F6 0%, #1A1A1A 100%);
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  color: #333;
+  position: relative;
+}
+
+body::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: -1;
+}
+
+header {
+  width: 100%;
+  min-height: 120px;
+  background: var(--azul-negro-degradado);
+  color: white;
+  padding: 20px 0;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  box-sizing: border-box;
+}
+
+header img {
+  max-height: 100px;
+  margin-left: 40px;
+}
+
+header h1 {
+  font-size: 2.5em;
+  margin: 0;
+}
+
+header p {
+  font-weight: 600;
+  margin-top: 5px;
+}
+nav {
+  background-color: var(--azul-medio);
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 15px 20px;
+  font-weight: bold;
+  outline: none;
+}
+
+nav a:focus,
+nav a:hover {
+  background-color: var(--azul-vibrante);
+  border-radius: 5px;
+}
+
+section {
+  padding: 50px 50px;
+  max-width: 800px;
+  margin: auto;
+  background-color: white;
+  margin-top: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+  color: var(--azul-medio);
+}
+
+.boton {
+  background-color: var(--azul-vibrante);
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 6px;
+  text-decoration: none;
+  margin-top: 20px;
+  display: inline-block;
+}
+
+.boton:hover {
+  background-color: var(--azul-medio);
+}
+
+form input {
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 1em;
+}
+
+form label {
+  font-weight: bold;
+  color: var(--azul-medio);
+}
+
+footer {
+  background: var(--azul-negro-degradado);
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}

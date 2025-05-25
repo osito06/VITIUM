@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vitium - Suscripción</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/formularioSus.css">
+</head>
+<body>
+  <header>
+    <img src="imagenes/LOGO VITIUM.png" alt="Logo Vitium">
+    <div>
+      <h1>VITIUM</h1>
+      <p>ENTRENA SIN BARRERAS</p>
+    </div>
+  </header>
+
+  <section>
+    <h3>Completa el formulario para suscribirte:</h3>
+    <form onsubmit="return enviarFormulario()">
+      <label for="nombre">Nombre completo:</label>
+      <input type="text" id="nombre" name="nombre" required>
+
+      <label for="email">Correo electrónico:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="telefono">Teléfono de contacto:</label>
+      <input type="tel" id="telefono" name="telefono" required>
+
+      <button class="boton" type="submit">Finalizar Suscripción</button>
+    </form>
+  </section>
+  <a href="VITIUM.html#terapias" class="volver">Volver</a>
+
+  <footer>
+    <p>&copy; 2025 Vitium. Todos los derechos reservados.</p>
+  </footer>
+</body>
+</html>
