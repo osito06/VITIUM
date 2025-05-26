@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Integración con EPS - Vitium</title>
+  <link rel="stylesheet" href="../CSS/servicios.css" />
+  <style>
+    .contenedor {
+      padding: 30px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    h2 {
+      color: #2c3e50;
+      font-size: 2rem;
+    }
+
+    .eps-explicacion {
+      margin-top: 15px;
+      font-size: 1.1rem;
+    }
+
+    .eps-lista {
+      margin: 30px 0;
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    eps.card {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card h3 {
+  color: var(--azul-claro);
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 0.95em;
+  color: #444;
+}
+
+    .eps-card img {
+      width: 100px;
+      height: auto;
+      margin-bottom: 10px;
+    }
+
+    .btn-sincronizar {
+      display: inline-block;
+      padding: 14px 28px;
+      background-color: #3498db;
+      color: white;
+      font-weight: bold;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      margin-top: 20px;
+      text-decoration: none;
+      transition: background-color 0.3s;
+    }
+
+    .btn-sincronizar:hover {
+      background-color: #2980b9;
+    }
+
+    .nota {
+      margin-top: 30px;
+      background-color: #ecf0f1;
+      padding: 20px;
+      border-left: 6px solid #3498db;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="../imagenes/LOGO VITIUM.png" alt="Logo Vitium" />
+    <div>
+      <h1>VITIUM</h1>
+      <p>ENTRENA SIN BARRERAS</p>
+    </div>
+  </header>
+
+  <main class="contenedor">
+    <h2>Integración con EPS</h2>
+    <p class="eps-explicacion">
+      En Vitium trabajamos para que tengas acceso a profesionales de salud certificados por tu EPS. Puedes sincronizar tu cuenta con entidades aliadas para recibir atención rigurosa, especialmente en casos que lo requieran.
+    </p>
+
+    <div class="eps-lista">
+      <div class="eps-card">
+        <img src="../imagenes/eps-sura.png" alt="SURA">
+        <p>SURA</p>
+      </div>
+      <div class="eps-card">
+        <img src="../imagenes/eps-sanitas.png" alt="Sanitas">
+        <p>Sanitas</p>
+      </div>
+      <div class="eps-card">
+        <img src="../imagenes/eps-nueva.png" alt="Nueva EPS">
+        <p>Nueva EPS</p>
+      </div>
+      <!-- Puedes añadir más EPS aquí -->
+    </div>
+
+    <a href="sincronizar-eps.html" class="btn-sincronizar">Sincronizar con mi EPS</a>
+
+    <div class="nota">
+      <strong>Nota:</strong> El servicio a través de EPS solo está disponible si tu entidad tiene convenio activo con Vitium. Una vez sincronizada tu cuenta, podrás agendar citas directamente con personal profesional certificado por tu EPS.
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Vitium. Todos los derechos reservados.</p>
+  </footer>
+
+</body>
+</html>
