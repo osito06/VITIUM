@@ -70,3 +70,15 @@
     button:hover {
       background-color: #0056b3;
     }
+
+    .volver {
+  display: inline-block;
+  margin-top: 40px;
+  text-decoration: none;
+  background-color: var(--azul-claro);
+  color: white;
+  padding: 12px 25px;
+  border-radius: 25px;
+  font-weight: bold;
+  transition: background 0.3s;
+}

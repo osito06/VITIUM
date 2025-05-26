@@ -6,9 +6,13 @@
   <title>Integración con EPS - Vitium</title>
   <link rel="stylesheet" href="../CSS/servicios.css" />
   <style>
-    .contenedor {
-      padding: 30px;
-      max-width: 1000px;
+    .card-principal {
+      background: white;
+      border-radius: 15px;
+      padding: 30px 50px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+      color: #333;
+      max-width: 900px;
       margin: auto;
     }
 
@@ -30,7 +34,7 @@
       justify-content: center;
     }
 
-    eps.card {
+    .eps.card {
   background: white;
   border-radius: 12px;
   padding: 20px;
@@ -75,6 +79,17 @@
     .btn-sincronizar:hover {
       background-color: #2980b9;
     }
+    .volver {
+  display: inline-block;
+  margin-top: 40px;
+  text-decoration: none;
+  background-color: var(--azul-claro);
+  color: white;
+  padding: 12px 25px;
+  border-radius: 25px;
+  font-weight: bold;
+  transition: background 0.3s;
+}
 
     .nota {
       margin-top: 30px;
@@ -95,7 +110,7 @@
     </div>
   </header>
 
-  <main class="contenedor">
+  <main class="card-principal">
     <h2>Integración con EPS</h2>
     <p class="eps-explicacion">
       En Vitium trabajamos para que tengas acceso a profesionales de salud certificados por tu EPS. Puedes sincronizar tu cuenta con entidades aliadas para recibir atención rigurosa, especialmente en casos que lo requieran.
@@ -123,7 +138,7 @@
       <strong>Nota:</strong> El servicio a través de EPS solo está disponible si tu entidad tiene convenio activo con Vitium. Una vez sincronizada tu cuenta, podrás agendar citas directamente con personal profesional certificado por tu EPS.
     </div>
   </main>
-
+<a href="servicios.html" class="volver">volver a servicios</a>
   <footer>
     <p>&copy; 2025 Vitium. Todos los derechos reservados.</p>
   </footer>
