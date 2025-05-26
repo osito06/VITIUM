@@ -3,11 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Iniciar Sesión - Vitium</title>
+  <title>Registrarse - Vitium</title>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../CSS/login.css">
+  
   <link rel="stylesheet" href="../CSS/vitium.css">
+  <link rel="stylesheet" href="../CSS/registro.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  
 </head>
 <body>
   <header style="display: flex; justify-content: space-between; align-items: center; padding: 10px 20px;">
@@ -34,32 +36,22 @@
     </ul>
   </nav>
 
-  <main class="login-container" role="main">
-    <h2>Iniciar Sesión</h2>
-
-    <div class="social-login">
-      <button class="social-button google">
-        <i class="fab fa-google"></i> Iniciar con Google
-      </button>
-      <!-- Puedes agregar otros botones así:
-      <button class="social-button facebook">
-        <i class="fab fa-facebook"></i> Iniciar con Facebook
-      </button>
-      -->
-    </div>
-
-
+  <main class="register-container" role="main">
+    <h2>Crear cuenta</h2>
     <form action="#" method="post">
+      <label for="nombre">Nombre completo:</label>
+      <input type="text" id="nombre" name="nombre" required>
+
       <label for="email">Correo electrónico:</label>
       <input type="email" id="email" name="email" required>
 
       <label for="password">Contraseña:</label>
       <input type="password" id="password" name="password" required>
-      <label question="registro" style="text-align: left;"> ya tienes una cuenta?:</label>
-      <a href="registro.html" style="text-align: left;">Regístrarse</a>
-      
-      <button type="submit">Entrar</button>
-      
+
+      <label for="confirm-password">Confirmar contraseña:</label>
+      <input type="password" id="confirm-password" name="confirm-password" required>
+
+      <button type="submit">Registrarse</button>
     </form>
   </main>
 

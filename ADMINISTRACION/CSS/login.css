@@ -1,8 +1,16 @@
- .login-container {
+
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background-color: #f5f5f5;
+      margin: 0;
+      padding: 0;
+    }
+
+    .login-container {
       max-width: 400px;
       margin: 60px auto;
       padding: 30px;
-      background-color: #f7f7f7;
+      background-color: white;
       border-radius: 12px;
       box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     }
@@ -36,8 +44,73 @@
       border-radius: 6px;
       font-size: 16px;
       cursor: pointer;
+      transition: background-color 0.3s;
     }
 
-.login-container button:hover {
-  background-color: #005fa3;
-}
+    .login-container button:hover {
+      background-color: #005fa3;
+    }
+
+    .social-login {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      margin-bottom: 20px;
+    }
+
+    .social-button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: white;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      padding: 10px;
+      font-size: 14px;
+      cursor: pointer;
+      transition: background-color 0.2s;
+    }
+
+    .social-button i {
+      margin-right: 10px;
+      font-size: 18px;
+    }
+
+    .social-button.google {
+      color: #f0f0f0;
+    }
+
+    .social-button:hover {
+      background-color: #f0f0f0;
+    }
+
+    .separator {
+      text-align: center;
+      margin: 20px 0;
+      position: relative;
+    }
+
+    .separator::before,
+    .separator::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      width: 40%;
+      height: 1px;
+      background-color: #ccc;
+    }
+
+    .separator::before {
+      left: 0;
+    }
+
+    .separator::after {
+      right: 0;
+    }
+
+    .separator span {
+      background-color: white;
+      padding: 0 10px;
+      position: relative;
+      z-index: 1;
+    }
