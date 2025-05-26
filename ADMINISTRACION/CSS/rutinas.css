@@ -1,0 +1,31 @@
+
+    .video-container {
+      position: relative;
+      width: 100%;
+      padding-top: 56.25%; /* 16:9 ratio */
+    }
+
+    .video-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border-radius: 0;
+    }
+
+    .informacion {
+      margin-top: 40px;
+      padding: 0 20px;
+    }
+
+    .informacion .card {
+      max-width: 800px;
+      margin: 20px auto;
+    }
+
+    .volver {
+      display: block;
+      margin: 40px auto;
+      text-align: center;
+    }

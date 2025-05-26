@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Seguimiento Profesional - Vitium</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../CSS/servicios.css">
+  <link rel="stylesheet" href="../CSS/vitium.css">
+  <link rel="stylesheet" href="../CSS/seguimiento-profesional.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  
+</head>
+<body>
+  <header>
+    <img src="../imagenes/LOGO VITIUM.png" alt="Logo Vitium" />
+    <div>
+      <h1>VITIUM</h1>
+      <p>ENTRENA SIN BARRERAS</p>
+    </div>
+    
+  </header>
+
+  <nav role="navigation" aria-label="Menú principal">
+  <ul style="list-style: none; display: flex; justify-content: center; margin: 0; padding: 0;">
+    <li><a href="inicio.html" tabindex="0">Inicio</a></li>
+    <li><a href="Nosotros.html" tabindex="0">Nosotros</a></li>
+    <li><a href="servicios.html" tabindex="0">Servicios</a></li>
+    <li><a href="Suscripcion.html" tabindex="0">Suscripción</a></li>
+    <li><a href="terapias.html" tabindex="0">Terapias</a></li>
+    <li><a href="contacto.html" tabindex="0">Contacto</a></li>
+  </ul>
+</nav>
+
+  <main class="contenido">
+    <h2>Seguimiento Profesional</h2>
+    <p>Contamos con herramientas que permiten monitorear tu progreso y ayudarte a mantener la motivación durante el proceso.</p>
+
+    <!-- Gráfico de progreso -->
+    <div class="grafico-container">
+      <h3>Evolución Personal</h3>
+      <canvas id="graficoProgreso"></canvas>
+    </div>
+
+    <!-- Calendario -->
+    <div class="calendario-container">
+      <h3>Calendario de Citas</h3>
+      <div class="calendario">
+        <div class="dia">Lun</div><div class="dia">Mar</div><div class="dia">Mié</div><div class="dia">Jue</div><div class="dia">Vie</div><div class="dia">Sáb</div><div class="dia">Dom</div>
+        <!-- Semana 1 -->
+        <div class="dia"></div><div class="dia"></div><div class="dia terapia">1</div><div class="dia">2</div><div class="dia terapia">3</div><div class="dia">4</div><div class="dia">5</div>
+        <!-- Semana 2 -->
+        <div class="dia terapia">6</div><div class="dia">7</div><div class="dia">8</div><div class="dia">9</div><div class="dia terapia">10</div><div class="dia">11</div><div class="dia">12</div>
+      </div>
+    </div>
+
+    <!-- Información adicional -->
+    <section style="margin-top: 40px;">
+      <h3>Asesoramiento Continuo</h3>
+      <p>Nuestros fisioterapeutas certificados revisan periódicamente tus resultados y ajustan tus rutinas para garantizar un progreso constante y seguro.</p>
+    </section>
+
+    <a href="servicios.html" class="volver">Volver</a>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Vitium. Todos los derechos reservados.</p>
+  </footer>
+
+  <script>
+    const ctx = document.getElementById('graficoProgreso').getContext('2d');
+    const grafico = new Chart(ctx, {
+      type: 'line',
+      data: {
+        labels: ['Ene', 'Feb', 'Mar', 'Abr', 'May'],
+        datasets: [{
+          label: 'Progreso Físico',
+          data: [10, 20, 35, 50, 65],
+          borderColor: '#007BFF',
+          borderWidth: 3,
+          fill: false,
+          tension: 0.3
+        }]
+      },
+      options: {
+        responsive: true,
+        plugins: {
+          legend: {
+            display: true,
+            position: 'bottom'
+          }
+        },
+        scales: {
+          y: {
+            beginAtZero: true,
+            title: {
+              display: true,
+              text: 'Porcentaje (%)'
+            }
+          },
+          x: {
+            title: {
+              display: true,
+              text: 'Meses'
+            }
+          }
+        }
+      }
+    });
+  </script>
+</body>
+</html>

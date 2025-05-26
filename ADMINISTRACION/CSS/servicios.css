@@ -144,3 +144,24 @@ footer {
   padding: 20px;
   margin-top: 60px;
 }
+.card-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.card-link .card {
+  cursor: pointer;
+}
+
+/* Elimina subrayado específico dentro de h3 y p si están en un enlace */
+.card-link h3, 
+.card-link p {
+  text-decoration: none !important;
+  ;
+}
+
+.card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
