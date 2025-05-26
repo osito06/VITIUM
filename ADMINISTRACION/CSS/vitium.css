@@ -11,6 +11,17 @@
   transition: color 0.3s ease;
 }
 
+.boton {
+  background-color: var(--azul-vibrante);
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 6px;
+  text-decoration: none;
+  margin-top: 20px;
+  display: inline-block;
+}
+
 .login-icon:hover {
   color: #005599;      /* Color al pasar el mouse */
 }
