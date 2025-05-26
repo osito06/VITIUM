@@ -20,6 +20,22 @@ body {
   justify-content: center;
   text-align: center;
   padding: 20px;
+  animation: fadeIn 1.0s ease-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.principalTarjet {
+  background: white;
+  border-radius: 15px;
+  padding: 30px 50px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  color: #333;
+  max-width: 900px;
+  margin: auto;
 }
 
 header img {
@@ -87,6 +103,7 @@ footer {
   margin-top: auto;
   padding: 20px 0;
   font-size: 0.9em;
-  color: #ccefff;
+  color: #ffffff;
   text-align: center;
+  font-size: 0.9em;
 }
