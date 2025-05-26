@@ -120,7 +120,7 @@ p.subtitulo {
   color: #444;
 }
 
-.card button {
+.card a {
   margin-top: 15px;
   background-color: var(--azul-vibrante);
   color: white;
@@ -144,17 +144,70 @@ footer {
   margin-top: 60px;
 }
 
-.chatbot-btn {
-    display: inline-block;
-    padding: 12px 24px;
-    font-size: 16px;
-    color: white;
-    background-color: #007bff;
-    border-radius: 8px;
-    text-decoration: none;
-    transition: background-color 0.3s;
-  }
+.chatbot-buttons {
+    display: flex;
+    justify-content: center; /* Centra los botones */
+    gap: 20px; /* Espaciado entre los botones */
+    margin-top: 20px; /* Espacio superior */
+}
 
-  .chatbot-btn:hover {
+.chatbot-btn {
+    background-color: #007bff;
+    color: white;
+    padding: 12px 20px;
+    text-decoration: none;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.chatbot-btn:hover {
     background-color: #0056b3;
-  }
+}
+
+.carrusel-discapacidad {
+  margin: 40px auto;
+  text-align: center;
+  max-width: 900px;
+  background-color: #f4f4f4;
+  padding: 20px;
+  border-radius: 12px;
+}
+
+.carrusel-discapacidad h3 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  color: #007bff;
+}
+
+.carrusel-contenedor {
+  overflow-x: auto;
+  white-space: nowrap;
+  padding: 10px 0;
+}
+
+.carrusel {
+  display: inline-flex;
+  gap: 20px;
+  padding: 10px;
+}
+
+.carrusel .item {
+  min-width: 140px;
+  background-color: #007bff;
+  color: white;
+  padding: 15px 10px;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 1rem;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.carrusel .item:hover {
+  transform: scale(1.05);
+  background-color: #0056b3;
+}

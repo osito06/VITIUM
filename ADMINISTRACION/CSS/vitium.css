@@ -2,6 +2,7 @@
   --azul-claro: #2DD8F6;
   --azul-vibrante: #009EF7;
   --azul-medio: #0077D9;
+  --azul-oscuro-degradado: linear-gradient(90deg, #2DD8F6 0%, #0077D9 100%);
   --azul-negro-degradado: linear-gradient(90deg, #2DD8F6 0%, #1A1A1A 100%);
 }
 
@@ -113,3 +114,4 @@ footer {
   margin-top: 40px;
   border-radius: 0 0 8px 8px;
 }
+

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Agendar sesión - Vitium</title>
+  <link rel="stylesheet" href="../css/agendar.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <header>
+    <img src="../imagenes/LOGO VITIUM.png" alt="Logo Vitium" />
+    <div>
+      <h1>VITIUM</h1>
+      <p>ENTRENA SIN BARRERAS</p>
+    </div>
+  </header>
+
+  <main>
+    <div class="card-principal">
+      <h2>Agendar sesión</h2>
+      <p class="subtitulo">Completa el siguiente formulario para elegir la fecha y hora de tu sesión.</p>
+    </div>
+
+    <div class="card">
+      <h3 id="nombre-terapia">Cargando...</h3>
+
+      <form id="form-agendar">
+        <label for="nombre">Tu nombre:</label>
+        <input type="text" id="nombre" name="nombre" required />
+
+        <label for="fecha">Fecha de la sesión:</label>
+        <input type="date" id="fecha" name="fecha" required />
+
+        <label for="hora">Hora:</label>
+        <input type="time" id="hora" name="hora" required />
+
+        <button type="submit" class="boton-azul">Confirmar sesión</button>
+      </form>
+
+      <div id="confirmacion" style="display:none;">
+        <h3>✅ ¡Sesión agendada exitosamente!</h3>
+        <p id="detalles-confirmacion"></p>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Vitium. Todos los derechos reservados.</p>
+  </footer>
+
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const terapia = params.get('terapia');
+    if (terapia) {
+      document.getElementById('nombre-terapia').textContent = terapia;
+    }
+
+    document.getElementById('form-agendar').addEventListener('submit', function (e) {
+      e.preventDefault();
+      const nombre = document.getElementById('nombre').value;
+      const fecha = document.getElementById('fecha').value;
+      const hora = document.getElementById('hora').value;
+
+      document.getElementById('form-agendar').style.display = 'none';
+      document.getElementById('confirmacion').style.display = 'block';
+      document.getElementById('detalles-confirmacion').textContent =
+        `${nombre}, tu sesión de "${terapia}" ha sido programada para el ${fecha} a las ${hora}.`;
+    });
+  </script>
+</body>
+</html>

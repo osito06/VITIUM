@@ -1,0 +1,86 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #ececec;
+}
+
+header {
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  border-bottom: 1px solid #ddd;
+}
+
+header img {
+  width: 60px;
+  margin-right: 15px;
+}
+
+header h1 {
+  margin: 0;
+  color: #007bff;
+}
+
+header p {
+  margin: 0;
+  font-size: 0.9em;
+  color: #666;
+}
+
+.card-principal {
+  background-color: white;
+  padding: 30px;
+  border-radius: 16px;
+  margin: 30px auto;
+  max-width: 800px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  text-align: center;
+}
+
+.subtitulo {
+  color: #555;
+}
+
+.card {
+  background-color: white;
+  padding: 30px;
+  margin: 20px auto;
+  max-width: 500px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+form label {
+  display: block;
+  margin-top: 20px;
+  font-weight: 600;
+}
+
+form input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+.boton-azul {
+  margin-top: 25px;
+  padding: 12px;
+  background: #0099ff;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 100%;
+}
+
+#confirmacion {
+  text-align: center;
+  margin-top: 30px;
+}
+
